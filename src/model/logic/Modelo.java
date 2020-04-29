@@ -1,238 +1,130 @@
 package model.logic;
 
-import java.awt.List;
-import java.io.File;
+import com.google.gson.Gson;
+import controller.Controller;
+import model.data_structures.*;
+import view.View;
+
+import java.io.BufferedReader;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Collections;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Iterator;
-import java.util.Random;
 
-import com.google.gson.*;
-import com.google.gson.stream.JsonReader;
 
-import model.data_structures.*;
 
-/**
- * Definicion del modelo del mundo
- *
- */
 public class Modelo {
-	/**
-	 * Atributos del modelo del mundo
+
+	private Controller controller;
+
+	private static View view;
+
+	//Valor inicial para el nï¿½mero de datos a cargar
+	public int N;
+
+	/*
+	 * Grande = ./data/Comparendos_DEI_2018_Bogotï¿½_D.C.geojson
+	 * Mediano Ordenado = ./data/Comparendos_DEI_2018_Bogotï¿½_D.C_small_50000_sorted.geojson
+	 * Mediano = ./data/Comparendos_DEI_2018_Bogotï¿½_D.C_50000_.geojson
+	 * pequenio = ./data/Comparendos_DEI_2018_Bogotï¿½_D.C_small.geojson
 	 */
-	
-	/**
-	 * Cola de lista encadenada.
-	 */
-	
-	private HashLinearProbing datosCola2;
-	
-	private HashSeparateChaining datosCola3;
-	
-	private ArbolRojoNegroBTS datosArbol;
+	private static final String GRANDE = "./data/Comparendos_DEI_2018_Bogotá_D.C.geojson";
+	private static final String MEDIANOORDENADO = "./data/Comparendos_DEI_2018_Bogotá_D.C_small_50000_sorted.geojson";
+	private static final String MEDIANO = "./data/Comparendos_DEI_2018_Bogotá_D.C_50000_.geojson";
+	private static final String PEQUENIO = "./data/Comparendos_DEI_2018_Bogotá_D.C_small.geojson";
 
-	private static Comparable[] aux;
 
-	/**
-	 * Constructor del modelo del mundo con capacidad predefinida
-	 */
-	public Modelo()
-	{
-		
-		datosCola2 = new HashLinearProbing();
-		datosCola3=new HashSeparateChaining();
-		datosArbol= new ArbolRojoNegroBTS();
+	public static int mayorOID;
+
+	@SuppressWarnings("rawtypes")
+	private static ArbolRojoNegro arbol;
+	private static String archivoActual;
+	private static MaxCola colaPQ;
+
+
+	public Modelo(){
+		N = 20;
+		view = new View();
 	}
 
-	/**
-	 * Carga el archivo .JSON en una lista enlazada.
-	 * @throws FileNotFoundException. Si no encuentra el archivo.
-	 */
-	
-	public void cargarCola() throws FileNotFoundException
-	{
-		//Definir mejor la entrada para el lector de json
-		
-		long inicio = System.currentTimeMillis();
-		long inicio2 = System.nanoTime();
-		String dir= "./data/Comparendos_DEI_2018_Bogot�_D.C.geojson";
-		File archivo= new File(dir);
-		JsonReader reader= new JsonReader( new InputStreamReader(new FileInputStream(archivo)));
-		JsonObject gsonObj0= JsonParser.parseReader(reader).getAsJsonObject();
 
-		JsonArray comparendos=gsonObj0.get("features").getAsJsonArray();
-		int i=0;
-		while(i<comparendos.size())
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public static void cargar(){
+
+		arbol = new ArbolRojoNegro();
+
+		//cambiar esto para cambiar de tamanio de archivos.
+		archivoActual = MEDIANO;
+		try
 		{
-			JsonElement obj= comparendos.get(i);
-			JsonObject gsonObj= obj.getAsJsonObject();
+			FileInputStream inputStream;
+			inputStream = new FileInputStream(archivoActual);
+			InputStreamReader inputStreamreader = new InputStreamReader(inputStream);
+			BufferedReader bufferedReader = new BufferedReader(inputStreamreader);
 
-			JsonObject gsonObjpropiedades=gsonObj.get("properties").getAsJsonObject();
-			int objid= gsonObjpropiedades.get("OBJECTID").getAsInt();
-			String fecha= gsonObjpropiedades.get("FECHA_HORA").getAsString();
-			String mediodeteccion = "";
-			String clasevehiculo=gsonObjpropiedades.get("CLASE_VEHICULO").getAsString();
-			String tiposervi=gsonObjpropiedades.get("TIPO_SERVICIO").getAsString();
-			String infraccion=gsonObjpropiedades.get("INFRACCION").getAsString();
-			String desinfraccion=gsonObjpropiedades.get("DES_INFRACCION").getAsString();
-			String localidad=gsonObjpropiedades.get("LOCALIDAD").getAsString();
-			String municipio = "";
+			Json cargar =  new Gson().fromJson(bufferedReader, Json.class);
 
-			JsonObject gsonObjgeometria=gsonObj.get("geometry").getAsJsonObject();
 
-			JsonArray gsonArrcoordenadas= gsonObjgeometria.get("coordinates").getAsJsonArray();
-			double longitud= gsonArrcoordenadas.get(0).getAsDouble();
-			double latitud= gsonArrcoordenadas.get(1).getAsDouble();
+			for (int i=0; i<cargar.features.length;i++){
+				Comparendo comp = new Comparendo(cargar.features[i].properties.OBJECTID, cargar.features[i].properties.FECHA_HORA,
+						cargar.features[i].properties.MEDIO_DETECCION,cargar.features[i].properties.CLASE_VEHICULO,
+						cargar.features[i].properties.TIPO_SERVICIO,cargar.features[i].properties.INFRACCION,
+						cargar.features[i].properties.DES_INFRACCION,cargar.features[i].properties.LOCALIDAD,
+						cargar.features[i].properties.MUNICIPIO,cargar.features[i].geometry.coordinates[0],
+						cargar.features[i].geometry.coordinates[1],"OBJECTID");
 
-			Comparendo agregar=new Comparendo(objid, fecha,mediodeteccion,clasevehiculo, tiposervi, infraccion, desinfraccion, localidad, municipio ,longitud,latitud);
-			datosArbol.put(agregar.getLlave(), agregar);
-			i++;
-		}
-		long fin2 = System.nanoTime();
-		long fin = System.currentTimeMillis();
-		
-		System.out.println((fin2-inicio2)/1.0e9 +" segundos, de la carga de datos normal.");
-		
-		System.out.println("Numero de Comparendos: "+datosArbol.size());
-		System.out.println("El comparendo con menor ObejctID es: "+datosArbol.min().toString());
-		System.out.println("El comparendo con mayor ObejctID es: "+datosArbol.max().toString());
-		
-		System.out.println("Total de nodos en el �rbol Rojo-Negro: "+datosArbol.size());
-		System.out.println("Altura m�xima del �rbol: "+datosArbol.height());
-		System.out.println("Altura minima del �rbol: "+datosArbol.height1());
-		System.out.println("Altura mas izquierda del �rbol: "+datosArbol.heightprom());
-		System.out.println("Altura mas derecha del �rbol: "+datosArbol.heightprom1());
-		System.out.println("Altura aleatoria: "+datosArbol.heightprom2());
-		System.out.println("Altura aleatoria: "+datosArbol.heightprom2());
-		System.out.println("Altura aleatoria: "+datosArbol.heightprom2());
-	}
-	
-	
-	public void requerimiento2(int objectId) 
-	{
-		KeyComparendo k=new KeyComparendo(objectId,null,null,null);
-		Comparendo objeto=(Comparendo)datosArbol.get(k);
-		if(objeto!=null) {
-		System.out.println("El comparendo con ID "+ objectId+" es: "+objeto.toString());
-		}
-		else 
-		{
-			System.out.println("No hay comparendo con ese ID");
-		}
-	}
-	
-	public void requerimiento3(int idinferior,int idsuperior) 
-	{
-		KeyComparendo kinferior=new KeyComparendo(idinferior,null,null,null);
-		KeyComparendo ksuperior=new KeyComparendo(idsuperior,null,null,null);
-		
-		Iterable<KeyComparendo> resultado= datosArbol.keys(kinferior, ksuperior);
-		
-		Iterator<KeyComparendo> iterator= resultado.iterator();
-		while(iterator.hasNext()) 
-		{
-			KeyComparendo llave= (KeyComparendo) iterator.next();
-			System.out.println(datosArbol.get(llave).toString());
-		}
-		
-		
-	}
-	
-	private static void shuffle(Comparable[] a)
-	{
-		Random r= new Random();
-		for(int i= a.length-1;i>0;i--)
-		{
-			int index= r.nextInt(i+1);
-			Comparable a2= a[index];
-			a[index]=a[i];
-			a[i]=a2;
-		}
-	}
+				arbol.put(comp.darLlave(), comp);
 
-	public static Comparable[] getAux() {
-		return aux;
-	}
-
-	
-
-	public HashLinearProbing getDatosCola2() {
-		return datosCola2;
-	}
-
-	public HashSeparateChaining getDatosCola3() {
-		return datosCola3;
-	}
-	
-	public Comparable[] copiar(ListaDoblementeEncadenada datos)
-	{
-		int i=0;
-		Node puntero=datos.darCabeza2();
-		Comparable[] arreglo= new Comparable[datos.darLongitud()];
-		while(i<datos.darLongitud())
-		{
-			arreglo[i]= puntero.darE();
-			puntero=puntero.darSiguiente();
-			i++;
-		}
-		return arreglo;
-		
-	}
-	
-	public void pegar(Comparable[] copia, ListaDoblementeEncadenada nuevo)
-	{
-		int i=0;
-		while(i<copia.length)
-		{
-			nuevo.insertarFinal(copia[i]);
-			i++;
-		}
-	}
-	
-	public void shellSortMenoraMayor(Comparable datos[])
-	{
-		
-		int N=datos.length;
-		int h=1;
-		while(h<N/3)
-			h=3*h+1;
-		while(h>=1){
-			for(int i=h;i<N;i++)
-			{
-					for(int j=i;j>=h && less(datos[j], datos[j-h]);j-=h)
-					{
-						exch(datos,j,j-h);
-					}
 			}
-			h=h/3;
+
 		}
-		
+		catch (Exception e)
+		{
+			e.getStackTrace();
+		}
+
 	}
-	
-	private boolean less(Comparable v,Comparable w)
-	{
-		return v.compareTo(w) < 0;
-	}
-	
-	private void exch(Comparable[] datos,int i, int j)
-	{
-		Comparable t=datos[i];
-		datos[i]=datos[j];
-		datos[j]=t;
+
+	@SuppressWarnings("unchecked")
+	public static void requerimientosCargar(){
+		Comparendo maximo = (Comparendo) arbol.get(arbol.max());
+		view.mensajeDeCarga(arbol.size() +"", maximo.toString());
 	}
 
 
+	//clases del Json para cargar
 
+	private static class Json{
+		String type;
+		Features[] features;
+	}
 
+	private static class Features{
+		String type;
+		Properties properties;
+		Geometry geometry;
+	}
 
+	private static class Geometry{
+		String type;
+		double[] coordinates;
+	}
 
+	private static class Properties{
+		int OBJECTID;
+		String FECHA_HORA;
+		String MEDIO_DETECCION;
+		String CLASE_VEHICULO;
+		String TIPO_SERVICIO;
+		String INFRACCION;
+		String DES_INFRACCION;
+		String LOCALIDAD;
+		String MUNICIPIO;
+	}
 
 
 }
-
