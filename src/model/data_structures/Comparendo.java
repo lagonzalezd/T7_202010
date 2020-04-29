@@ -21,11 +21,9 @@ public class Comparendo implements Comparable<Comparendo> {
     public String TIPO_SERVICIO;
     public int OBJECTID;
     public double distanciaAlaEstacion;
-    private Haversine claseDis;
 
     public String indicadorComparacion;
 
-    public llaveC key;
 
     public double longitud;
     public double latitud;
@@ -46,14 +44,8 @@ public class Comparendo implements Comparable<Comparendo> {
         this.longitud = longitud;
         this.latitud = latitud;
 
-        this.key = new llaveC(OBJECTID);
-
-        this.distanciaAlaEstacion = claseDis.distance(latitud, longitud, lat, lon);
     }
 
-    public llaveC darLlave(){
-        return key;
-    }
 
     public void cambiarIndicador(String nuevoCriterio){
         indicadorComparacion = nuevoCriterio;
