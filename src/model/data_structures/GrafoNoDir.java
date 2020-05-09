@@ -8,6 +8,7 @@ public class GrafoNoDir<K extends Comparable, C> {
 
     private final int vertices;
     private int arcos;
+    private Haversine distanciaVertices;
     private ListaEncadenada<Integer>[] adj;
 
 
@@ -33,13 +34,12 @@ public class GrafoNoDir<K extends Comparable, C> {
      * @throws IllegalArgumentException if the number of vertices or edges is negative
      * @throws IllegalArgumentException if the input stream is in the wrong format
      */
-    public GrafoNoDirigido(K in) {
-        if (in == null) throw new IllegalArgumentException("argument is null");
-        try {
-            this.V = in.readInt();
-            if (V < 0) throw new IllegalArgumentException("number of vertices in a Graph must be nonnegative");
+    public GrafoNoDirigido(In  in) {
+
+            this.vertices = in.readInt();
+            if (vertices < 0) throw new IllegalArgumentException("number of vertices in a Graph must be nonnegative");
             adj = (ListaEncadenada<Integer>[]) new ListaEncadenada[V];
-            for (int v = 0; v < V; v++) {
+            for (int v = 0; v < vertices; v++) {
                 adj[v] = new ListaEncadenada<Integer>();
             }
             int E = in.readInt();
@@ -47,13 +47,9 @@ public class GrafoNoDir<K extends Comparable, C> {
             for (int i = 0; i < E; i++) {
                 int v = in.readInt();
                 int w = in.readInt();
-                validateVertex(v);
-                validateVertex(w);
+
                 addEdge(v, w);
             }
-        }
-        catch (NoSuchElementException e) {
-            throw new IllegalArgumentException("invalid input format in Graph constructor", e);
         }
     }
 
@@ -117,9 +113,16 @@ public class GrafoNoDir<K extends Comparable, C> {
     public void addEdge(int v, int w) {
         validateVertex(v);
         validateVertex(w);
-        arcos++;
+
         adj[v].add(w);
         adj[w].add(v);
+        arcos++;
+    }
+
+    public double getCostArc(K idVertexIni, K idVertexFin) {
+
+        return distanciaVertices.distance(idVertexIni.get)
+
     }
 
 

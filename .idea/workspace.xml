@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81a89fa-fb3f-4aab-bb1b-e20855b92794" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/data_structures/GrafoNoDir.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/data_structures/GrafoNoDirigido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/data_structures/Estacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/data_structures/Estacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/data_structures/GrafoNoDir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/data_structures/GrafoNoDir.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +60,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="721" y="201" width="468" height="710" key="#com.intellij.ide.util.MemberChooser" timestamp="1589006585013">
+    <state x="721" y="201" width="468" height="710" key="#com.intellij.ide.util.MemberChooser" timestamp="1589034963841">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="721" y="201" width="468" height="710" key="#com.intellij.ide.util.MemberChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1589006585013" />
+    <state x="721" y="201" width="468" height="710" key="#com.intellij.ide.util.MemberChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1589034963841" />
     <state x="766" y="441" width="377" height="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1588133299672">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>

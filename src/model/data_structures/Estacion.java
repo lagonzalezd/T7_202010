@@ -44,6 +44,7 @@ public class Estacion  {
                                 String CELEC, String CONTACTO, String PAG_WEB, int IUU_PLAN, int IUSCATA, int IULOCAL, String EASOCIA, String FUNCION, String TEQUIPA,
                                 String NOMBRE, String IDENTIFICACION, int FECHA_C){
 
+        this.OBJECTID = OBJECTID;
         this.PLAN = PLAN;
         this.CODENT = CODENT;
         this.COD_PROY = COD_PROY;
@@ -75,4 +76,119 @@ public class Estacion  {
 
     }
 
+    public int getOBJECTID() {
+        return OBJECTID;
+    }
+
+    public int getPLAN() {
+        return PLAN;
+    }
+
+    public int getCODENT() {
+        return CODENT;
+    }
+
+    public int getCOD_PROY() {
+        return COD_PROY;
+    }
+
+    public int getANIO_GEO() {
+        return ANIO_GEO;
+    }
+
+    public String getFECHA_INI() {
+        return FECHA_INI;
+    }
+
+    public String getFECHA_FIN() {
+        return FECHA_FIN;
+    }
+
+    public String getDESCRIPCION() {
+        return DESCRIPCION;
+    }
+
+    public String getEST_PROY() {
+        return EST_PROY;
+    }
+
+    public String getINTERV_ESP() {
+        return INTERV_ESP;
+    }
+
+    public String getDIR_SITIO() {
+        return DIR_SITIO;
+    }
+
+    public String getCOD_SITIO() {
+        return COD_SITIO;
+    }
+
+    public int getLatitud() {
+        return latitud;
+    }
+
+    public int getLongitud() {
+        return longitud;
+    }
+
+    public String getSERVICIO() {
+        return SERVICIO;
+    }
+
+    public String getHORARIO() {
+        return HORARIO;
+    }
+
+    public int getTELEFONO() {
+        return TELEFONO;
+    }
+
+    public String getCELEC() {
+        return CELEC;
+    }
+
+    public String getCONTACTO() {
+        return CONTACTO;
+    }
+
+    public String getPAG_WEB() {
+        return PAG_WEB;
+    }
+
+    public int getIUU_PLAN() {
+        return IUU_PLAN;
+    }
+
+    public int getIUSCATA() {
+        return IUSCATA;
+    }
+
+    public int getIULOCAL() {
+        return IULOCAL;
+    }
+
+    public String getEASOCIA() {
+        return EASOCIA;
+    }
+
+    public String getFUNCION() {
+        return FUNCION;
+    }
+
+    public String getTEQUIPA() {
+        return TEQUIPA;
+    }
+
+    public String getNOMBRE() {
+        return NOMBRE;
+    }
+
+    public String getIDENTIFICACION() {
+        return IDENTIFICACION;
+    }
+
+    public int getFECHA_C() {
+        return FECHA_C;
+    }
 }
