@@ -1,19 +1,27 @@
 package model.logic;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
+
+import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
 
 import controller.Controller;
 import model.data_structures.EstacionArco;
 import model.data_structures.EstacionVertice;
+import model.data_structures.GrafoNoDirigido;
 import view.View;
 
 public class Modelo {
 
+	private GrafoNoDirigido graph;
+
 	private Controller controller;
-	
+
 	private EstacionVertice vert;
 	private EstacionArco arc;
 
@@ -22,7 +30,7 @@ public class Modelo {
 	public Modelo(){
 		view = new View();
 	}
-	
+
 	public void cargar() throws IOException
 	{
 		int aarcos=0;
@@ -33,7 +41,7 @@ public class Modelo {
 		try{
 			FileReader reader = new FileReader(rutaArcos);
 			BufferedReader lector = new BufferedReader( reader );
-			
+
 			String linea = lector.readLine( );
 			while(linea!=null)
 			{
@@ -73,10 +81,27 @@ public class Modelo {
 		view.printNumEdgesAndVer(avertices + "", aarcos + "");
 	}
 
-	public void crearJson() {
+	public void createJson() {
+        Gson gson = new Gson();
+        try (FileWriter writer = new FileWriter("./data/informacion.json")) {
+            gson.toJson(graph, writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+	}
+	
+	public void readJson(){
+		Gson gson = new Gson();
+		String path = "./data/informacion.json";
+		JsonReader reader;
+		try {
+			reader = new JsonReader(new FileReader(path));
+			graph = gson.fromJson(reader, EstacionVertice.class);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
 
-    }
-	public void leerJson(){
 	}
 
 }
