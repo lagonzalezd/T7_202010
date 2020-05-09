@@ -2,7 +2,7 @@ package model.data_structures;
 
 import java.util.NoSuchElementException;
 
-public class GrafoNoDirigido {
+public class GrafoNoDirigido  {
 	
 	private static final String NEWLINE = System.getProperty("line.separator");
 
