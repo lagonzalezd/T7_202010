@@ -7,27 +7,27 @@ import edu.princeton.cs.algs4.Edge;
 import edu.princeton.cs.algs4.EdgeWeightedGraph;
 import edu.princeton.cs.algs4.SeparateChainingHashST;
 
-public class grafoNoDirigido<K, V> {
+public class GrafoNoDirigido<K, V> {
 
 	private EdgeWeightedGraph grafo;
 	private SeparateChainingHashST<K, Integer> llaveAEntero;
 	private SeparateChainingHashST<Integer, K> enteroALlave;
 	private SeparateChainingHashST<K, V> llaveAInfoVertex;
+	
+	private boolean[] marked;
+	private int[] edgeTo;
 
 	private int V = 0;
-	
-	private int E = 0;
 	
 	public int V(){
 		return V;
 	}
 	
-	//cambiar
 	public int E(){
 		return grafo.E();
 	}
 	
-	public grafoNoDirigido(int tamaNo) {
+	public GrafoNoDirigido(int tamaNo) {
 		grafo = new EdgeWeightedGraph(tamaNo);
 		llaveAEntero = new SeparateChainingHashST<K, Integer>();
 		llaveAInfoVertex = new SeparateChainingHashST<K, V>();
@@ -83,6 +83,17 @@ public class grafoNoDirigido<K, V> {
 		return lista;
 	}
 	
+	public void dfs(K s){
+		int v = llaveAEntero.get(s);
+        marked[v] = true;
+        for (K w : adj(s)) {
+        	int k = llaveAEntero.get(w);
+            if (!marked[k]) {
+                edgeTo[k] = v;
+                dfs(w);
+            }
+        }
+	}
 	
 	public Iterable<K> adj(K key) {
 		Iterable<Edge> a = grafo.adj(llaveAEntero.get(key));

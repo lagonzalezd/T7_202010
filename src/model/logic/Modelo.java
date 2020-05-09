@@ -1,105 +1,82 @@
 package model.logic;
 
-import com.google.gson.Gson;
-import controller.Controller;
-import model.data_structures.Comparendo;
-import view.View;
-
 import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Iterator;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Arrays;
 
-
+import controller.Controller;
+import model.data_structures.EstacionArco;
+import model.data_structures.EstacionVertice;
+import view.View;
 
 public class Modelo {
 
 	private Controller controller;
+	
+	private EstacionVertice vert;
+	private EstacionArco arc;
 
 	private static View view;
-
-	private static final String GRANDE = "./data/Comparendos_DEI_2018_Bogotá_D.C.geojson";
-	private static final String MEDIANOORDENADO = "./data/Comparendos_DEI_2018_Bogotá_D.C_small_50000_sorted.geojson";
-	private static final String MEDIANO = "./data/Comparendos_DEI_2018_Bogotá_D.C_50000_.geojson";
-	private static final String PEQUENIO = "./data/Comparendos_DEI_2018_Bogotá_D.C_small.geojson";
-
-	public static int mayorOID;
-
-	private static String archivoActual;
 
 	public Modelo(){
 		view = new View();
 	}
+	
+	public void cargar() throws IOException
+	{
+		int aarcos=0;
+		int avertices=0;
 
-
-	public static void cargar(){
-
-		//cambiar esto para cambiar de tamanio de archivos.
-		archivoActual = MEDIANO;
-		try
-		{
-			FileInputStream inputStream;
+		String rutaVertices="./data/bogota_vertices.txt";
+		String rutaArcos="./data/bogota_arcos.txt";
+		try{
+			FileReader reader = new FileReader(rutaArcos);
+			BufferedReader lector = new BufferedReader( reader );
 			
-			inputStream = new FileInputStream(archivoActual);
-			InputStreamReader inputStreamreader = new InputStreamReader(inputStream);
-			
-			BufferedReader bufferedReader = new BufferedReader(inputStreamreader);
-
-			Json cargar =  new Gson().fromJson(bufferedReader, Json.class);
-
-			for (int i=0; i<cargar.features.length;i++){
-				Comparendo comp = new Comparendo(cargar.features[i].properties.OBJECTID, cargar.features[i].properties.FECHA_HORA,
-						cargar.features[i].properties.MEDIO_DETECCION,cargar.features[i].properties.CLASE_VEHICULO,
-						cargar.features[i].properties.TIPO_SERVICIO,cargar.features[i].properties.INFRACCION,
-						cargar.features[i].properties.DES_INFRACCION,cargar.features[i].properties.LOCALIDAD,
-						cargar.features[i].properties.MUNICIPIO,cargar.features[i].geometry.coordinates[0],
-						cargar.features[i].geometry.coordinates[1],"OBJECTID");
-
+			String linea = lector.readLine( );
+			while(linea!=null)
+			{
+				String[] partes = linea.split( " " );
+				aarcos++;
+				for (int i = 1; i<partes.length;i++) {
+					arc = new EstacionArco(Integer.parseInt(partes[0]),Integer.parseInt(partes[i]),0);
+				}
+				linea=lector.readLine();
 			}
-
+			reader.close( );
+			lector.close( );
 		}
-		catch (Exception e)
-		{
-			e.getStackTrace();
+		catch (Exception e) {
+			e.printStackTrace();
 		}
-
+		try{
+			FileReader reader = new FileReader(rutaVertices);
+			BufferedReader lector = new BufferedReader( reader );   
+			String linea = lector.readLine( );
+			while(linea!=null)
+			{
+				String[] partes = linea.split(",");
+				int id = Integer.parseInt(partes[0]);
+				double longitud = Double.parseDouble(partes[1]);
+				double latitud = Double.parseDouble(partes[2]);
+				vert = new EstacionVertice(id, longitud, latitud);
+				avertices++;
+				linea=lector.readLine();
+			}
+			lector.close( );
+			reader.close( );
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		view.printNumEdgesAndVer(avertices + "", aarcos + "");
 	}
 
+	public void crearJson() {
 
-	//clases del Json para cargar
-
-	private static class Json{
-		String type;
-		Features[] features;
+    }
+	public void leerJson(){
 	}
-
-	private static class Features{
-		String type;
-		Properties properties;
-		Geometry geometry;
-	}
-
-	private static class Geometry{
-		String type;
-		double[] coordinates;
-	}
-
-	private static class Properties{
-		int OBJECTID;
-		String FECHA_HORA;
-		String MEDIO_DETECCION;
-		String CLASE_VEHICULO;
-		String TIPO_SERVICIO;
-		String INFRACCION;
-		String DES_INFRACCION;
-		String LOCALIDAD;
-		String MUNICIPIO;
-	}
-
 
 }

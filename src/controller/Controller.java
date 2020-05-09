@@ -1,5 +1,6 @@
 package controller;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import model.logic.Modelo;
@@ -21,7 +22,7 @@ public class Controller {
 	
 	
 		
-	public void run() 
+	public void run()
 	{
 		Scanner lector = new Scanner(System.in);
 		boolean fin = false;
@@ -33,12 +34,18 @@ public class Controller {
 			int option = lector.nextInt();
 			switch(option){
 				case 1:
-
+				try {
+					modelo.cargar();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 					break;
 				case 2: 
+					break;
 				case 3:
+					break;
 				default:
-					view.printMessage("--------- \n Opcion Invalida !! \n---------");
+					view.printMessage("--------- \n Opcion Invalida \n---------");
 					break;
 			}
 		}
