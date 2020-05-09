@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81a89fa-fb3f-4aab-bb1b-e20855b92794" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/data_structures/GrafoNoDir.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/data_structures/GrafoNoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/data_structures/GrafoNoDirigido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/data_structures/GrafoNoDirigido.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bW7iyRtDFGEd7y8492OA7w5jR3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -57,10 +60,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="721" y="201" width="468" height="710" key="#com.intellij.ide.util.MemberChooser" timestamp="1589006585013">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="721" y="201" width="468" height="710" key="#com.intellij.ide.util.MemberChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1589006585013" />
     <state x="766" y="441" width="377" height="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1588133299672">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="766" y="441" width="377" height="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1588133299672" />
+    <state x="413" y="34" width="1083" height="1046" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589004365438">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="413" y="34" width="1083" height="1046" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1589004365438" />
     <state x="627" y="246" width="655" height="619" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588133404441">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -73,9 +84,13 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="315" y="34" width="1280" height="1046" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1588133290207" />
-    <state width="623" height="498" key="SwitcherDM" timestamp="1588133528852">
+    <state width="623" height="498" key="SwitcherDM" timestamp="1589006548764">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="623" height="498" key="SwitcherDM/0.34.1920.1046@0.34.1920.1046" timestamp="1588133528852" />
+    <state width="623" height="498" key="SwitcherDM/0.34.1920.1046@0.34.1920.1046" timestamp="1589006548764" />
+    <state x="528" y="235" width="864" height="642" key="find.popup" timestamp="1589002960850">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="528" y="235" width="864" height="642" key="find.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1589002960850" />
   </component>
 </project>
