@@ -36,7 +36,7 @@ public class Modelo {
 	{
 		int aarcos=0;
 		int avertices=0;
-		graph = new GrafoNoDirigido<>(0);
+		graph = new GrafoNoDirigido<>(228046);
 		String rutaVertices="./data/bogota_vertices.txt";
 		String rutaArcos="./data/bogota_arcos.txt";
 		try{
