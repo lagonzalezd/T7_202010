@@ -1,6 +1,7 @@
 package model.data_structures;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import edu.princeton.cs.algs4.CC;
 import edu.princeton.cs.algs4.Edge;
@@ -14,9 +15,11 @@ public class GrafoNoDirigido<K, V> {
 	//Copyright 2002-2018, Robert Sedgewick and Kevin Wayne.
 
 	private EdgeWeightedGraph grafo;
+	private CC cc;
 	private SeparateChainingHashST<K, Integer> llaveAEntero;
 	private SeparateChainingHashST<Integer, K> enteroALlave;
 	private SeparateChainingHashST<K, V> llaveAInfoVertex;
+	private Haversine hav;
 	
 	private boolean[] marked;
 	private int[] edgeTo;
@@ -36,6 +39,8 @@ public class GrafoNoDirigido<K, V> {
 		llaveAEntero = new SeparateChainingHashST<K, Integer>();
 		llaveAInfoVertex = new SeparateChainingHashST<K, V>();
 		enteroALlave = new SeparateChainingHashST<Integer, K>();
+		hav = new Haversine();
+		cc = new CC(grafo);
 	}
 	
 	public void addEdge(K from, K to, double peso) {
@@ -87,6 +92,16 @@ public class GrafoNoDirigido<K, V> {
 		return lista;
 	}
 	
+	public int cc(){
+		return cc.count();
+	}
+	
+	public void unchecked(){
+		for (int i = 0; i<marked.length; i++){
+			marked[i] = false;
+		}
+	}
+	
 	public void dfs(K s){
 		int v = llaveAEntero.get(s);
         marked[v] = true;
@@ -97,6 +112,21 @@ public class GrafoNoDirigido<K, V> {
                 dfs(w);
             }
         }
+	}
+	
+	public void setCostArc(K idVertexIni, K idVertexFin, double cost){
+		Iterator<K> ini = adj(idVertexIni).iterator();
+		boolean encontro = false;
+		int fin = llaveAEntero.get(idVertexFin);
+		while (ini.hasNext() && !encontro){
+			EstacionArco ar = (EstacionArco) ini.next();
+			if(fin == ar.getFin()){
+				EstacionVertice vinit = (EstacionVertice) llaveAInfoVertex.get(idVertexIni);
+				EstacionVertice vfin = (EstacionVertice) llaveAInfoVertex.get(idVertexFin);
+				double costo = hav.distance(vinit.getLatitud(), vinit.getLongitud(), vfin.getLatitud(), vfin.getLongitud());
+				ar.setCost(costo);
+			}
+		}
 	}
 	
 	public Iterable<K> adj(K key) {
