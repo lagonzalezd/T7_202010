@@ -2,484 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81a89fa-fb3f-4aab-bb1b-e20855b92794" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/AVLTreeST$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/AVLTreeST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Accumulator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/AcyclicLP.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/AcyclicSP.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/AdjMatrixEdgeWeightedDigraph$AdjIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/AdjMatrixEdgeWeightedDigraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Alphabet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/AmericanFlag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/AmericanFlagX.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Arbitrage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/AssignmentProblem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Average.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BST$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BTree$Entry.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BTree$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Bag$LinkedIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Bag$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Bag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BellmanFordSP.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BinaryDump.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BinaryIn.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BinaryInsertion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BinaryOut.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BinarySearch.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BinarySearchST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BinaryStdIn.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BinaryStdOut.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BinomialMinPQ$MyComparator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BinomialMinPQ$MyIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BinomialMinPQ$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BinomialMinPQ.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Bipartite.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BipartiteMatching.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BipartiteX.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BlackFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BoruvkaMST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BoyerMoore.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BreadthFirstDirectedPaths.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/BreadthFirstPaths.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/CC.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/CPM.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Cat.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/ClosestPair.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/CollisionSystem$Event.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/CollisionSystem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Complex.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Count.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Counter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Cycle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Date.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DeDup.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DegreesOfSeparation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DepthFirstDirectedPaths.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DepthFirstOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DepthFirstPaths.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DepthFirstSearch.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Digraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DigraphGenerator$Edge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DigraphGenerator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DijkstraAllPairsSP.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DijkstraSP.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DijkstraUndirectedSP.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DirectedCycle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DirectedCycleX.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DirectedDFS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DirectedEdge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DirectedEulerianCycle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DirectedEulerianPath.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DoublingRatio.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DoublingTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Draw$RetinaImageIcon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Draw.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/DrawListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Edge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/EdgeWeightedDigraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/EdgeWeightedDirectedCycle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/EdgeWeightedGraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/EulerianCycle$Edge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/EulerianCycle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/EulerianPath$Edge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/EulerianPath.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/FFT.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/FarthestPair.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/FenwickTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/FibonacciMinPQ$MyComparator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/FibonacciMinPQ$MyIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/FibonacciMinPQ$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/FibonacciMinPQ.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/FileIndex.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/FlowEdge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/FlowNetwork.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/FloydWarshall.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/FordFulkerson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/FrequencyCounter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/GREP.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/GabowSCC.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/GaussJordanElimination.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/GaussianElimination.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Genome.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/GlobalMincut$CutPhase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/GlobalMincut.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/GrahamScan.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Graph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/GraphGenerator$Edge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/GraphGenerator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/GrayscalePicture.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Heap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/HexDump.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/HopcroftKarp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Huffman$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Huffman.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/In.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexBinomialMinPQ$MyComparator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexBinomialMinPQ$MyIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexBinomialMinPQ$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexBinomialMinPQ.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexFibonacciMinPQ$MyComparator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexFibonacciMinPQ$MyIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexFibonacciMinPQ$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexFibonacciMinPQ.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexMaxPQ$HeapIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexMaxPQ.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexMinPQ$HeapIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexMinPQ.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexMultiwayMinPQ$MyComparator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexMultiwayMinPQ$MyIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/IndexMultiwayMinPQ.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/InplaceMSD.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Insertion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/InsertionX.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Interval1D$LengthComparator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Interval1D$MaxEndpointComparator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Interval1D$MinEndpointComparator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Interval1D.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Interval2D.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Inversions.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/KMP.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/KWIK.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Knuth.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/KosarajuSharirSCC.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/KruskalMST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LSD.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LZW.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LazyPrimMST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LinearProbingHashST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LinearProgramming.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LinearRegression.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LinkedBag$LinkedIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LinkedBag$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LinkedBag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LinkedQueue$LinkedIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LinkedQueue$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LinkedQueue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LinkedStack$LinkedIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LinkedStack$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LinkedStack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LongestCommonSubstring.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LongestRepeatedSubstring.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LookupCSV.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/LookupIndex.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/MSD.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/MaxPQ$HeapIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/MaxPQ.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Merge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/MergeBU.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/MergeX.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/MinPQ$HeapIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/MinPQ.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Multiway.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/MultiwayMinPQ$MyComparator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/MultiwayMinPQ$MyIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/MultiwayMinPQ.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/NFA.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/NonrecursiveDFS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/NonrecursiveDirectedDFS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Out.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Particle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/PatriciaSET$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/PatriciaSET.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/PatriciaST$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/PatriciaST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Picture.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/PictureDump.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Point2D$Atan2Order.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Point2D$DistanceToOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Point2D$PolarOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Point2D$ROrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Point2D$XOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Point2D$YOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Point2D.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Polynomial.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/PrimMST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Queue$LinkedIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Queue$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Queue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Quick.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Quick3string.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Quick3way.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/QuickBentleyMcIlroy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/QuickFindUF.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/QuickUnionUF.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/QuickX.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/RabinKarp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/RandomSeq.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/RectHV.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/RedBlackBST$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/RedBlackBST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/ResizingArrayBag$ArrayIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/ResizingArrayBag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/ResizingArrayQueue$ArrayIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/ResizingArrayQueue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/ResizingArrayStack$ReverseArrayIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/ResizingArrayStack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/RunLength.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/SET.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/ST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/SegmentTree$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/SegmentTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Selection.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/SeparateChainingHashST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/SequentialSearchST$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/SequentialSearchST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Shell.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/SparseVector.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Stack$LinkedIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Stack$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Stack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/StaticSETofInts.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/StdArrayIO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/StdAudio$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/StdAudio$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/StdAudio.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/StdDraw$RetinaImageIcon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/StdDraw.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/StdIn.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/StdOut.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/StdRandom.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/StdStats.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Stopwatch.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/StopwatchCPU.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/SuffixArray$Suffix.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/SuffixArray.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/SuffixArrayX.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/SymbolDigraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/SymbolGraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/TST$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/TST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/TarjanSCC.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/ThreeSum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/ThreeSumFast.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/TopM.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Topological.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/TopologicalX.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Transaction$HowMuchOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Transaction$WhenOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Transaction$WhoOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Transaction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/TransitiveClosure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/TrieSET$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/TrieSET.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/TrieST$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/TrieST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/TwoPersonZeroSumGame.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/UF.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Vector.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/WeightedQuickUnionUF.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/WhiteFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/edu/princeton/cs/algs4/Whitelist.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/model/data_structures/Estacion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/model/data_structures/Haversine.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/AVLTreeST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Accumulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/AcyclicLP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/AcyclicSP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/AdjMatrixEdgeWeightedDigraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Alphabet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/AmericanFlag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/AmericanFlagX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Arbitrage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/AssignmentProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Average.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Bag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BellmanFordSP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BinaryDump.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BinaryIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BinaryInsertion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BinaryOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BinarySearchST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BinaryStdIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BinaryStdOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BinomialMinPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Bipartite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BipartiteMatching.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BipartiteX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BlackFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BoruvkaMST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BoyerMoore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BreadthFirstDirectedPaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BreadthFirstPaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/CC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/CPM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/ClosestPair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/CollisionSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Complex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Count.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Counter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Cycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DeDup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DegreesOfSeparation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DepthFirstDirectedPaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DepthFirstOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DepthFirstPaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DepthFirstSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Digraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DigraphGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DijkstraAllPairsSP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DijkstraSP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DijkstraUndirectedSP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DirectedCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DirectedCycleX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DirectedDFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DirectedEdge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DirectedEulerianCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DirectedEulerianPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DoublingRatio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DoublingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Draw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DrawListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Edge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/EdgeWeightedDigraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/EdgeWeightedDirectedCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/EdgeWeightedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/EulerianCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/EulerianPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/FFT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/FarthestPair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/FenwickTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/FibonacciMinPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/FileIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/FlowEdge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/FlowNetwork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/FloydWarshall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/FordFulkerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/FrequencyCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/GREP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/GabowSCC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/GaussJordanElimination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/GaussianElimination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Genome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/GlobalMincut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/GrahamScan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/GraphGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/GrayscalePicture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Heap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/HexDump.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/HopcroftKarp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Huffman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/In.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/IndexBinomialMinPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/IndexFibonacciMinPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/IndexMaxPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/IndexMinPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/IndexMultiwayMinPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/InplaceMSD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Insertion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/InsertionX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Interval1D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Interval2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Inversions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/KMP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/KWIK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Knuth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/KosarajuSharirSCC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/KruskalMST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LSD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LZW.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LazyPrimMST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LinearProbingHashST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LinearProgramming.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LinearRegression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LinkedBag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LinkedQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LinkedStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LongestCommonSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LongestRepeatedSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LookupCSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LookupIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/MSD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/MaxPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Merge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/MergeBU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/MergeX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/MinPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Multiway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/MultiwayMinPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/NFA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/NonrecursiveDFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/NonrecursiveDirectedDFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Out.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Particle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/PatriciaSET.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/PatriciaST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Picture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/PictureDump.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Point2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Polynomial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/PrimMST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Quick.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Quick3string.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Quick3way.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/QuickBentleyMcIlroy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/QuickFindUF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/QuickUnionUF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/QuickX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/RabinKarp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/RandomSeq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/RectHV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/RedBlackBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/ResizingArrayBag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/ResizingArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/ResizingArrayStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/RunLength.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/SET.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/ST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/SegmentTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Selection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/SeparateChainingHashST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/SequentialSearchST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Shell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/SparseVector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/StaticSETofInts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/StdArrayIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/StdAudio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/StdDraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/StdIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/StdOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/StdRandom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/StdStats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Stopwatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/StopwatchCPU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/SuffixArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/SuffixArrayX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/SymbolDigraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/SymbolGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/TST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/TarjanSCC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/ThreeSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/ThreeSumFast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/TopM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Topological.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/TopologicalX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/TransitiveClosure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/TrieSET.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/TrieST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/TwoPersonZeroSumGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/UF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Vector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/WeightedQuickUnionUF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/WhiteFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Whitelist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/data_structures/grafoNoDirigido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/T7_202010.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/T7_202010.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/model/data_structures/GrafoNoDirigido.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/model/data_structures/GrafoNoDirigido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/data_structures/GrafoNoDir.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/gson-2.8.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/data_structures/Estacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/data_structures/Estacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/data_structures/GrafoNoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/data_structures/GrafoNoDirigido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/logic/Modelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/logic/Modelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -493,11 +23,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1bW7iyRtDFGEd7y8492OA7w5jR3" />
   <component name="ProjectLevelVcsManager">
@@ -509,17 +42,40 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/gson-2.8.6.jar!/" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/json-lib-2.4-jdk15.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="model.data_structures" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/.idea" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="RUN" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="T7_202010" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -535,10 +91,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="556" y="152" width="797" height="807" key="#Unnamed_(1)" timestamp="1589076527661">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="556" y="152" width="797" height="807" key="#Unnamed_(1)/0.34.1920.1046@0.34.1920.1046" timestamp="1589076527661" />
+    <state x="414" y="207" width="1261" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589086535620">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="414" y="207" width="1261" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1589086535620" />
     <state x="721" y="201" width="468" height="710" key="#com.intellij.ide.util.MemberChooser" timestamp="1589034963841">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="721" y="201" width="468" height="710" key="#com.intellij.ide.util.MemberChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1589034963841" />
+    <state x="627" y="301" width="656" height="510" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589075767243">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="627" y="301" width="656" height="510" key="#com.intellij.ide.util.TreeClassChooserDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1589075767243" />
+    <state x="603" y="164" width="704" height="783" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1589071698723">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="603" y="164" width="704" height="783" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1589071698723" />
     <state x="766" y="441" width="377" height="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1588133299672">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -551,18 +123,46 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="627" y="246" width="655" height="619" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1588133404441" />
-    <state x="685" y="258" width="530" height="598" key="FileChooserDialogImpl" timestamp="1588133287989">
+    <state x="685" y="258" width="530" height="598" key="FileChooserDialogImpl" timestamp="1589083121599">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="685" y="258" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1588133287989" />
-    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor" timestamp="1588133290207">
+    <state x="685" y="258" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1589083121599" />
+    <state width="1864" height="263" key="GridCell.Tab.0.bottom" timestamp="1589086425873">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1588133290207" />
+    <state width="1864" height="263" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1589086425873" />
+    <state width="1864" height="263" key="GridCell.Tab.0.center" timestamp="1589086425872">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="263" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1589086425872" />
+    <state width="1864" height="263" key="GridCell.Tab.0.left" timestamp="1589086425872">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="263" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1589086425872" />
+    <state width="1864" height="263" key="GridCell.Tab.0.right" timestamp="1589086425872">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="263" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1589086425872" />
+    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor" timestamp="1589083194235">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1589083194235" />
     <state width="623" height="498" key="SwitcherDM" timestamp="1589006548764">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="623" height="498" key="SwitcherDM/0.34.1920.1046@0.34.1920.1046" timestamp="1589006548764" />
+    <state x="560" y="433" width="789" height="265" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1589071379730">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="560" y="433" width="789" height="265" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.34.1920.1046@0.34.1920.1046" timestamp="1589071379730" />
+    <state x="683" y="458" width="543" height="195" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589070697947">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="683" y="458" width="543" height="195" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.34.1920.1046@0.34.1920.1046" timestamp="1589070697947" />
+    <state x="668" y="213" width="574" height="685" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589071291492">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="668" y="213" width="574" height="685" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1589071291492" />
     <state x="528" y="235" width="864" height="642" key="find.popup" timestamp="1589002960850">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>

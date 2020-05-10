@@ -2,6 +2,7 @@ package model.data_structures;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import model.data_structures.EstacionVertice;
 
 import edu.princeton.cs.algs4.CC;
 import edu.princeton.cs.algs4.Edge;
