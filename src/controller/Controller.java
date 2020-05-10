@@ -26,8 +26,7 @@ public class Controller {
 	{
 		Scanner lector = new Scanner(System.in);
 		boolean fin = false;
-		String respuesta = "";
-
+		
 		while( !fin ){
 			view.printMenu();
 
@@ -41,11 +40,13 @@ public class Controller {
 				}
 					break;
 				case 2: 
+					modelo.createJson();
 					break;
 				case 3:
 					break;
 				default:
 					view.printMessage("--------- \n Opcion Invalida \n---------");
+					fin = true;
 					break;
 			}
 		}

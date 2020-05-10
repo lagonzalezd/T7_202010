@@ -9,6 +9,7 @@ import java.util.Arrays;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
+import com.sun.org.apache.xalan.internal.xsltc.compiler.sym;
 
 import controller.Controller;
 import model.data_structures.EstacionArco;
@@ -18,7 +19,7 @@ import view.View;
 
 public class Modelo {
 
-	private GrafoNoDirigido graph;
+	private GrafoNoDirigido<Integer, EstacionVertice> graph;
 
 	private Controller controller;
 
@@ -35,29 +36,9 @@ public class Modelo {
 	{
 		int aarcos=0;
 		int avertices=0;
-
+		graph = new GrafoNoDirigido<>(0);
 		String rutaVertices="./data/bogota_vertices.txt";
 		String rutaArcos="./data/bogota_arcos.txt";
-		try{
-			FileReader reader = new FileReader(rutaArcos);
-			BufferedReader lector = new BufferedReader( reader );
-
-			String linea = lector.readLine( );
-			while(linea!=null)
-			{
-				String[] partes = linea.split( " " );
-				aarcos++;
-				for (int i = 1; i<partes.length;i++) {
-					arc = new EstacionArco(Integer.parseInt(partes[0]),Integer.parseInt(partes[i]),0);
-				}
-				linea=lector.readLine();
-			}
-			reader.close( );
-			lector.close( );
-		}
-		catch (Exception e) {
-			e.printStackTrace();
-		}
 		try{
 			FileReader reader = new FileReader(rutaVertices);
 			BufferedReader lector = new BufferedReader( reader );   
@@ -69,11 +50,33 @@ public class Modelo {
 				double longitud = Double.parseDouble(partes[1]);
 				double latitud = Double.parseDouble(partes[2]);
 				vert = new EstacionVertice(id, longitud, latitud);
+				graph.addVertex(id, vert);
 				avertices++;
 				linea=lector.readLine();
 			}
 			lector.close( );
 			reader.close( );
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		try{
+			FileReader reader = new FileReader(rutaArcos);
+			BufferedReader lector = new BufferedReader( reader );
+
+			String linea = lector.readLine( );
+			while(linea!=null)
+			{
+				String[] partes = linea.split( " " );
+				for (int i = 1; i<partes.length;i++) {
+					aarcos++;
+					graph.addEdge(Integer.parseInt(partes[0]), Integer.parseInt(partes[i]), 0);
+				}
+				linea=lector.readLine();
+			}
+			reader.close( );
+			lector.close( );
 		}
 		catch (Exception e) {
 			e.printStackTrace();

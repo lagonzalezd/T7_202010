@@ -12,7 +12,7 @@ public class GrafoNoDirigido<K, V> {
 	
 	//Código tomado de: https://github.com/kevin-wayne/algs4/blob/master/src/main/java/edu/princeton/cs/algs4/Graph.java
 	//https://github.com/kevin-wayne/algs4/blob/master/src/main/java/edu/princeton/cs/algs4/DepthFirstPaths.java
-	//Copyright 2002-2018, Robert Sedgewick and Kevin Wayne.
+	//Copyright 2002-2020, Robert Sedgewick and Kevin Wayne.
 
 	private EdgeWeightedGraph grafo;
 	private CC cc;

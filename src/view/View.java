@@ -7,6 +7,7 @@ public class View
 		public void printMenu()
 		{
 			System.out.println("1. Cargar Datos");
+			System.out.println("2. Persistir los datos en un archivo Json");
 		}
 		
 		public void printNumEdgesAndVer(String edges, String ver){
